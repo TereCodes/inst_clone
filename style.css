@@ -7,6 +7,7 @@
  }
 
  .mainpage {
+  width: 50%;
    display: flex;
  }
 
@@ -27,9 +28,9 @@
    border-width: 1px;
    align-items: center;
    justify-content: center;
-
-
+   object-fit: cover;
  }
+ 
 
  .img-div {
    padding: 10px;
@@ -37,14 +38,19 @@
 
  .two-div{
   display: flex;
+  padding-left: 300px;
  }
 
  .vertical {
-   border-left: 1px solid black;
-   height: 500px;
+   border-left: 1px solid silver;
+   height: auto;
+   
+   
+   
  }
  #post-story{
   display: flex;
+  width: 81%;
   align-items: center;
   background-color: whitesmoke;
    padding: 10px;
@@ -52,11 +58,13 @@
    border-radius: 10px;
    margin-bottom: 5px;
  }
+ 
 
 #post-story img{
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  object-fit: cover;
 }
 
 .center-div{
@@ -66,7 +74,6 @@
   font-size: large;
 }
 .fine-img{
-
 }
 .fas {
   display: flex;
@@ -98,13 +105,16 @@
   font-weight: 900;
 }
 .post-area{
+padding-left: 400px;
 
 }
 .navbar{
-  width: 15%;
+  width: 25%;
   height: 100vh;
   display: grid;
+  position: fixed;
 }
+
 
 #follow{
   display: flex;
@@ -139,3 +149,71 @@ border-radius: 50%;
  margin: 30px; 
  
 } 
+.new-posts{
+  margin-bottom: 50px;
+}
+
+
+.ig{
+  font-family: cursive;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+
+@media screen and (max-width: 800px) {
+  .mainpage {
+    display: none;
+  }
+}
+
+.right-side {
+  width: 25%;
+  margin-top: 15px;
+  position: fixed;
+  right: 30px;
+}
+.right-side .profile-title{
+  display: flex;
+  align-items: center;
+}
+.right-side .profile-title .profile-left{
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+
+}
+.right-side .profile-title .profile-left .mage img{
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.right-side .profile-title .profile-left .detailed .name{
+  padding-bottom: 3px;
+  font-size: large;
+}
+.suggest{
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.suggest p{
+  margin-right: 90px;
+}
+.suggest-title{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.suggest-title .suggest-left{
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+}
+.suggest-title .suggest-left .mage img{
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.suggest-title .suggest-left .detailed .name{
+  padding-bottom: 3px;
+}
